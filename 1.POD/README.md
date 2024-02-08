@@ -13,10 +13,10 @@
 
 
 ## How creation of container inside the kubernetes takes place
-![pod](https://github.com/Subhabrata2468/Kubernetes/blob/trash/1.POD/Pod%20creation.png)
+![pod](https://github.com/Subhabrata2468/Kubernetes-/blob/master/1.POD/Kubernetes%20workload%20objects.png)
 
 ## Kubernetes workload object
- ![workload](https://github.com/Subhabrata2468/Kubernetes/blob/trash/1.POD/Kubernetes%20workload%20objects.png)
+ ![workload](https://github.com/Subhabrata2468/Kubernetes-/blob/master/1.POD/Pod%20creation.png)
 
 
 * 1.container_with_one_pod.yml
