@@ -5,7 +5,7 @@
  * If a Pod managed by a ReplicaSet fails or is deleted, the ReplicaSet will automatically create a new replica to replace it.
 
 #### Example:
-![replicaset](https://github.com/Subhabrata2468/Kubernetes/blob/trash/2.Replica-set/Replicaset.png)
+![replicaset](https://github.com/Subhabrata2468/Kubernetes-/blob/master/2.Replica-set/Replicaset.png)
 
 #### _COMMANDS BASED ON REPLICASET_
 
