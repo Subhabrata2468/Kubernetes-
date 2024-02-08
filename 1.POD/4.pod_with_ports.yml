@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: httpd-pod
+  labels:
+    app: my-app
+spec:
+  containers:
+  - name: my-container
+    image: httpd:latest
+    ports:
+    - containerPort: 80
+    command: ["/bin/sh", "-c", "echo Hello Kubernetes! && sleep 3600"] #This command will echo "Hello Kubernetes!" ,then sleep for 3600 seconds.
+
