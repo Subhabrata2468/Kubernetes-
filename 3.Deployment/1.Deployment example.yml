@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-multi-container-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: my-multi-container-app
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 1
+  template:
+    metadata:
+      labels:
+        app: my-multi-container-app
+    spec:
+      containers:
+      - name: container-1
+        image: httpd:latest
+        ports:
+        - containerPort: 8080
+      - name: container-2
+        image: sonarqube:latest
+        ports:
+        - containerPort: 9000
+      - name: container-3
+        image: grafana/grafana
+        ports:
+        - containerPort: 3000
