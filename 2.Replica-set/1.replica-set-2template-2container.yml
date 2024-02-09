@@ -6,25 +6,23 @@ spec:
   replicas: 5
   selector:
     matchLabels:
-      app: part2
+      app: my-app
   template:
     metadata:
       labels:
-        app: part1
+        app: my-app
     spec:
       containers:
-      - name: container-1
-        image: httpd:latest
-        ports:
-        - containerPort: 80
-
-  template:
-    metadata:
-      labels:
-        app: part2
-    spec:
-      containers:
-      - name: container-2
+      - name: nginx-container
         image: nginx:latest
         ports:
         - containerPort: 80
+          name: nginx-port
+      - name: tomcat-container
+        image: tomcat:latest
+        ports:
+        - containerPort: 8080
+          name: tomcat-port
+      - name: ubuntu-container
+        image: ubuntu:latest
+        command: ["/bin/sleep", "infinity"]  # Keeps the container running
