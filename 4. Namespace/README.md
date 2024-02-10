@@ -99,5 +99,5 @@ Example :
 ***NOTE:***
 LimitRange is used to set default and maximum resource limits for **individual pods or containers within a namespace**, while ResourceQuota is used to set hard limits on the **total amount of resources** that can be used by all the pods in a namespace
 
-Image
+
 ![final](https://github.com/Subhabrata2468/Kubernetes-/blob/master/4.%20Namespace/namespace.png)
