@@ -103,3 +103,9 @@ subsets:
         name: https
 
 ```
+
+
+1. clusterip-service.yaml
+1. nodeport-service.yaml
+1. loadbalancer-service.yaml
+1. externalname-service.yaml
