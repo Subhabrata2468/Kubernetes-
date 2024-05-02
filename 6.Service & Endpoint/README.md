@@ -45,7 +45,7 @@
 
    * **Ingress** : An Ingress is a Kubernetes resource that defines a set of rules for routing external HTTP(S) traffic to a service.Ingress resources require an Ingress controller to be deployed in the cluster, which is responsible for implementing the routing rules. Ingress controllers are available for many popular web servers, such as Nginx.
 
-![Services](https://github.com/Subhabrata2468/Kubernetes-/blob/master/4.%20Namespace/diagram.png)
+![Services](https://github.com/Subhabrata2468/Kubernetes-/blob/master/6.Service%20%26%20Endpoint/Services.png)
 
 
 
