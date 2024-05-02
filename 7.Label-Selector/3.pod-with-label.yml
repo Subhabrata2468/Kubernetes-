@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: 3-pod
+  labels:
+    app: myapp3
+    environment: production3
+spec:
+  containers:
+  - name: container-3
+    image: httpd:latest
+
