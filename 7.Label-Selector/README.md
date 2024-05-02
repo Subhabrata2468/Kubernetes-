@@ -77,7 +77,7 @@
 ***NOTE- it is connection to some parts of services ***
 #### Examples:
 first link 
-![Lebels and selector]()-----------------------------------------------------------------------------------------------------------------
+![Lebels and selector](https://github.com/Subhabrata2468/Kubernetes-/blob/master/7.Label-Selector/Label%20and%20Selector.png)
 1.  ```
     selector:
         matchExpressions:
