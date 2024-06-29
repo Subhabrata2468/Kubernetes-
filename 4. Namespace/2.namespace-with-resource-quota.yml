@@ -3,9 +3,10 @@ kind: ResourceQuota
 metadata:
   name: resource-quota
   namespace: app-namespace
+# All the information are only applied to "app-namespaces" and the pods and container will be present in the napmespace only  
 spec:
-  hard:
-    pods: "10"
+  hard: # These limits cannot be exceeded within the namespace
+    pods: "10" # No more than 10 pods can exist in the namespace at any given time
     requests.cpu: "1"
     limits.cpu: "2"
     requests.memory: "500Mi"
