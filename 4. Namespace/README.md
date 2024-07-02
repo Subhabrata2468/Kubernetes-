@@ -57,6 +57,14 @@ Example
     ```bash
     kubectl describe namespace <namespace_name>
     ```
+1. To see all the resources present in the namespace:
+    ```bash
+    kubectl get all -n <namespace_name>
+    ```
+1. To delete resources present in the namespace:
+    ```bash
+    kubectl delete pods,services,deployments --all -n <namespace_name>
+    ```        
 1. Edit a namespace:
     ```bash
     kubectl edit namespace <namespace_name>
